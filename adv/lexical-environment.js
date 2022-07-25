@@ -12,3 +12,5 @@ function sayName(){
 }
 
 sayName() //El resto de funciones, se corren con normalidad, porque lo que hace el Lexical Enviroment es chequear que cada función sea un universo y se esté llamando correctamente
+
+// Lexical Environment
