@@ -4,6 +4,7 @@
 console.log('1------')
 console.log(teddy)
 console.log(sing())
+console.log(sing2) //Si llamamos a sing2 sin los paréntesis, sí nos hoistea porque no es una función
 var teddy = 'Bear'
 function sing(){
     console.log('oh lalala')
@@ -18,5 +19,20 @@ function sing(){
 //     console.log('oh lalala')
 // })
 // Va a dar error, porque el compilador lo primero que lee es el paréntesis
+
+// function expression
+var sing2 = function(){
+    console.log('Callejeros - Function Expression')
+}
+console.log(sing2)
+// Ésto tiene que estar abajo de la declaración, porque sino tirra error "sing2 is not a function" 
+
+// function declaration
+function sing3(){
+    console.log('Los piojos - Functino Declaration')
+}
+
+
+
 // Hosting. 
 
